@@ -32,3 +32,6 @@ if __name__ == "__main__":
         print("Successfully created Bedrock runtime client")
     except Exception as e:
         print(f"Error creating Bedrock client: {e}")
+
+
+#----------------
