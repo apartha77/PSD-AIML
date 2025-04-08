@@ -57,7 +57,7 @@ class YahooFinanceTool(BaseTool):
 
 #  Instantiate the tool
 yahoo_finance_tool = YahooFinanceTool()
-
+logger.info("Yahoo Finance Tool loaded")
 
 class InvestmentReportPDF(FPDF):
     def __init__(self, symbol):
@@ -257,3 +257,5 @@ result = hedge_fund_crew.kickoff(
     inputs={"symbol": "AMZN"}
 )  #  Only provide initial input
 print(result)
+
+# add this
