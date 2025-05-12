@@ -31,6 +31,7 @@ bedrock_LITE_nova = LLM(model="bedrock/us.amazon.nova-lite-v1:0")
 bedrock_PRO_nova = LLM(model="bedrock/us.amazon.nova-pro-v1:0")
 
 logger.info("Planner Agent")
+# Planner Agent
 planner = Agent(
     role="Content Planner",
     goal="Plan engaging and factually accurate content on {topic}",
@@ -47,6 +48,7 @@ planner = Agent(
 )
 
 logger.info("Writer Agent")
+# Writer Agent
 writer = Agent(
     role="Content Writer",
     goal="Write insightful and factually accurate "
@@ -71,6 +73,7 @@ writer = Agent(
 )
 
 logger.info("Editor Agent")
+#Editor Agent
 editor = Agent(
     role="Editor",
     goal="Edit a given blog post to align with "
